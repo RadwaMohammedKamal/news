@@ -20,7 +20,6 @@ class _HomeScreenState extends State<HomeScreen> {
   CarouselController buttonCarouselController = CarouselController();
 
   Future<List<NewsModel>> fetchArticles() async {
-    print("hi hassan");
 
     List<NewsModel> newsmodel = [];
     // var url=Uri.parse("https://newsapi.org/v2/top-headlines?country=eg&apiKey=e2e73cedbcdd4f95a6394eea00ff1ec9");
@@ -57,17 +56,11 @@ class _HomeScreenState extends State<HomeScreen> {
         title: SvgPicture.asset("assets/icons/logosmall.svg"),
         backgroundColor: white,
         elevation: 0,
-        actions: [
-          IconButton(
-              onPressed: () {
-                print("search");
-              },
-              icon: Icon(
-                Icons.search,
-                color: black,
-                size: 33,
-              ))
-        ],
+          actions: [IconButton(onPressed: (){
+    print("search");
+    }, icon: Icon(
+        Icons.search,color:black,size:33
+          ))],
       ),
       body: SingleChildScrollView(
         child: Column(

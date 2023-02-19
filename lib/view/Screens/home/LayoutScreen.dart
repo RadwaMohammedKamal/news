@@ -17,8 +17,8 @@ class _LayoutScreenState extends State<LayoutScreen> {
   int _selectedIndex = 0;
   List pages = [
     HomeScreen(),
-    BookmarksScreen(),
     ExploreScreen(),
+    BookmarksScreen(),
   ];
 
   void _onItemTapped(int index) {

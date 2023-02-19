@@ -35,8 +35,8 @@ class _ExploreScreenState extends State<ExploreScreen> {
                         padding: const EdgeInsets.all(5.0),
                         child: FilterTopicCard(
                             text: "General",
-                            textColor: white,
-                            backgroundColor: mainColor,
+                            textColor: x == "general" ? white : mainColor,
+                            backgroundColor: x == "general" ? mainColor : white,
                             borderColor: mainColor),
                       ),
                       onTap: () {
@@ -51,8 +51,8 @@ class _ExploreScreenState extends State<ExploreScreen> {
                         padding: const EdgeInsets.all(5.0),
                         child: FilterTopicCard(
                             text: "Health",
-                            textColor: white,
-                            backgroundColor: mainColor,
+                            textColor:  x == "health" ? white : mainColor,
+                            backgroundColor: x == "health" ? mainColor : white,
                             borderColor: mainColor),
                       ),
                       onTap: () {
@@ -66,14 +66,14 @@ class _ExploreScreenState extends State<ExploreScreen> {
                       child: Padding(
                         padding: const EdgeInsets.all(5.0),
                         child: FilterTopicCard(
-                            text: "Health",
-                            textColor: white,
-                            backgroundColor: mainColor,
+                            text: "sports",
+                            textColor: x == "sports" ? white : mainColor,
+                            backgroundColor: x == "sports" ? mainColor : white,
                             borderColor: mainColor),
                       ),
                       onTap: () {
                         setState(() {
-                          x = "health";
+                          x = "sports";
                         });
                         // x=RestApiController.fetchCategoryArticles();
                       },
@@ -83,8 +83,8 @@ class _ExploreScreenState extends State<ExploreScreen> {
                         padding: const EdgeInsets.all(5.0),
                         child: FilterTopicCard(
                             text: "Entertainment",
-                            textColor: white,
-                            backgroundColor: mainColor,
+                            textColor: x == "Entertainment" ? white : mainColor,
+                            backgroundColor: x == "Entertainment" ? mainColor : white,
                             borderColor: mainColor),
                       ),
                       onTap: () {
@@ -99,8 +99,8 @@ class _ExploreScreenState extends State<ExploreScreen> {
                         padding: const EdgeInsets.all(5.0),
                         child: FilterTopicCard(
                             text: "Science",
-                            textColor: white,
-                            backgroundColor: mainColor,
+                            textColor: x == "Science" ? white : mainColor,
+                            backgroundColor: x == "Science" ? mainColor : white,
                             borderColor: mainColor),
                       ),
                       onTap: () {
@@ -115,8 +115,8 @@ class _ExploreScreenState extends State<ExploreScreen> {
                         padding: const EdgeInsets.all(5.0),
                         child: FilterTopicCard(
                             text: "Business",
-                            textColor: white,
-                            backgroundColor: mainColor,
+                            textColor: x == "Business" ? white : mainColor,
+                            backgroundColor: x == "Business" ? mainColor : white,
                             borderColor: mainColor),
                       ),
                       onTap: () {
@@ -131,8 +131,8 @@ class _ExploreScreenState extends State<ExploreScreen> {
                         padding: const EdgeInsets.all(5.0),
                         child: FilterTopicCard(
                             text: "Technology",
-                            textColor: white,
-                            backgroundColor: mainColor,
+                            textColor: x == "Technology" ? white : mainColor,
+                            backgroundColor: x == "Technology" ? mainColor : white,
                             borderColor: mainColor),
                       ),
                       onTap: () {
